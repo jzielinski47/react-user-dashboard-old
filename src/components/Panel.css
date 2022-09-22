@@ -4,6 +4,7 @@
     min-width: 350px;
     min-height: 200px;
 
+    color: var(--black87);
     background: var(--panel-white);
     border: 3px solid var(--border-white);
     border-radius: 20px;
@@ -13,13 +14,13 @@
 }
 
 .panel:nth-child(1) {
-    color: #E2E2E2;
-    background: #040404;
+    color: var(--white87);
+    background: var(--background-black);
 }
 
 .panel .title {
     font-size: 16px;
     font-weight: 700;
-    /* color: var(--black87); */
+
     text-transform: capitalize;
 }
