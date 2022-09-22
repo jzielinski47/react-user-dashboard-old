@@ -1,11 +1,13 @@
 import './Panel.css'
-import React from 'react';
+import React, { useState } from 'react';
 import { PanelProperities } from '../interfaces/interfaces';
 
 function Panel(props: PanelProperities) {
 
+    let [selected, select] = useState(false);
+
     return (
-        <div className='panel'>
+        <div className='panel' onClick={() => select(selected = !selected)}>
             <span className='title'>{props.title}</span>
         </div >
     );
