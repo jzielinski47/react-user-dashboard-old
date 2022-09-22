@@ -1,12 +1,12 @@
 import React from 'react';
 import './Sidebar.css';
 
-const author: string = "Jakub Zieliński"
+const projectName: string = "User Dashboard"
 
 function Sidebar() {
     return (
         <div className='sidebar'>
-            {author}
+            <span className='title'>{projectName}</span>
         </div>
     );
 }
