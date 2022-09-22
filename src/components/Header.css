@@ -1,6 +1,43 @@
+@import url("../App.css");
+
+:root {
+    --white87: #ffffff87;
+    --white60: #ffffff60;
+    --white30: #ffffff30;
+
+    --black87: #212121;
+    --black60: #00000060;
+    --black30: #00000030;
+
+    --background: #F0F2F5;
+    --panel: #FAFAFA;
+    --border: #E8E8E8;
+
+    --gray: #333333;
+}
+
 .header {
     width: 100%;
 
     min-height: 85px;
     padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-account {
+    display: flex;
+    gap: 1em;
+}
+
+.account-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    color: var(--black87);
+    font-weight: 700;
 }
