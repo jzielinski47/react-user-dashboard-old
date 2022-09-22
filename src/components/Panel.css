@@ -7,10 +7,11 @@
     color: var(--black87);
     background: var(--panel-white);
     border: 3px solid var(--border-white);
-    border-radius: 20px;
+    border-radius: 1.5em;
 
     display: flex;
     flex-direction: column;
+    gap: 1.5em;
 }
 
 .panel:nth-child(1) {

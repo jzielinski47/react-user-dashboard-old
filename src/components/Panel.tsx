@@ -5,7 +5,6 @@ import { PanelProperities } from '../interfaces/interfaces';
 function Panel(props: PanelProperities) {
 
     let [selected, select] = useState(false);
-    let [background, setBackground] = useState('');
 
     return (
         <div className='panel' onClick={() => { select(selected = !selected); console.log(selected); }}>
