@@ -1,0 +1,53 @@
+:root {
+    --white87: #E2E2E2;
+    --white60: #ffffff60;
+    --white30: #ffffff30;
+
+    --black87: #212121;
+    --black60: #666666;
+    --black30: #9e9e9e;
+
+    --background-white: #F0F2F5;
+    --panel-white: #FAFAFA;
+    --border-white: #E8E8E8;
+
+    --gray: #333333;
+}
+
+
+.panel {
+    padding: 2em 2.5em;
+
+    min-width: 350px;
+    min-height: 200px;
+
+    background: var(--panel-white);
+    border: 3px solid var(--border-white);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black87);
+    text-transform: capitalize;
+}
+
+.panel-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black60);
+}
+
+.panel.black {
+    color: var(--white87);
+    background: var(--panel-black);
+}
+
+.panel.white {
+    color: var(--black87);
+    background: var(--panel-white);
+}
