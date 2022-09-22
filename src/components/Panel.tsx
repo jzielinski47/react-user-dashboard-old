@@ -6,11 +6,9 @@ function Panel(props: PanelProperities) {
 
     return (
         <div className='panel'>
-            <span className='panel-title'>{props.title}</span>
+            <span className='title'>{props.title}</span>
         </div >
     );
-
-
 }
 
 export default Panel;

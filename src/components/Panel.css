@@ -29,25 +29,14 @@
     flex-direction: column;
 }
 
-.panel-title {
+.panel:nth-child(1) {
+    color: #E2E2E2;
+    background: #040404;
+}
+
+.panel .title {
     font-size: 16px;
     font-weight: 700;
-    color: var(--black87);
+    /* color: var(--black87); */
     text-transform: capitalize;
-}
-
-.panel-description {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--black60);
-}
-
-.panel.black {
-    color: var(--white87);
-    background: var(--panel-black);
-}
-
-.panel.white {
-    color: var(--black87);
-    background: var(--panel-white);
 }

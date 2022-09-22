@@ -27,7 +27,7 @@
     align-items: center;
 
     color: var(--black87);
-    background: var(--background-white);
+    background: var(--panel-white);
 
     border-bottom: 3px solid var(--border-white);
 }
@@ -41,6 +41,7 @@
 .account-details {
     display: flex;
     flex-direction: column;
+    font-size: 14px;
 }
 
 .username {
@@ -57,4 +58,3 @@
     font-weight: 700;
     font-size: 24px;
 }
-
