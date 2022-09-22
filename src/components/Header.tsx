@@ -4,12 +4,9 @@ import { deepOrange } from '@mui/material/colors';
 import Hamburger from './Hamburger';
 import './Header.css';
 import React from 'react';
+import { Account } from '../interfaces/interfaces';
 
-interface Account {
-    id?: string;
-    name: string;
-    description: string;
-}
+
 
 function Header() {
 
