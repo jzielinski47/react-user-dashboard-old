@@ -1,9 +1,9 @@
 import { Avatar } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { deepOrange } from '@mui/material/colors';
+import Hamburger from './Hamburger';
 import './Header.css';
 import React from 'react';
-import Hamburger from './Hamburger';
 
 interface Account {
     id?: string;
