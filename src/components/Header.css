@@ -1,21 +1,3 @@
-@import url("../App.css");
-
-:root {
-    --white87: #ffffff87;
-    --white60: #ffffff60;
-    --white30: #ffffff30;
-
-    --black87: #212121;
-    --black60: #666666;
-    --black30: #9e9e9e;
-
-    --background-white: #F0F2F5;
-    --panel-white: #FAFAFA;
-    --border-white: #E8E8E8;
-
-    --gray: #333333;
-}
-
 .header {
     width: 100%;
 
