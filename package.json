@@ -1,5 +1,6 @@
 {
   "name": "react-user-dashboard",
+  "author": "https://github.com/jzielinski47",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
