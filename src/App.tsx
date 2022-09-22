@@ -8,8 +8,9 @@ function App() {
       {/* header */}
       <Header />
 
-      {/* App body */}
       {/* sidebar */}
+
+      {/* App body */}
       {/* main display */}
       {/* panel */}
 
