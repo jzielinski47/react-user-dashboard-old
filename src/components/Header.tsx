@@ -1,8 +1,9 @@
 import { Avatar } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { deepOrange } from '@mui/material/colors';
 import './Header.css';
 import React from 'react';
+import Hamburger from './Hamburger';
 
 interface Account {
     id?: string;
@@ -28,19 +29,16 @@ function Header() {
 
     return (
         <div className='header'>
-            <div className='header_left'>
-                <MenuIcon /> Dashboard
+            <div className='header-content'>
+                <Hamburger /> <span className="title">Dashboard</span>
             </div>
-            <div className='header_right'>
-                <div className='user-account'>
-                    <Avatar sx={{ bgcolor: deepOrange[500] }}>{getInitials(user.name)}</Avatar>
-                    <div className='account-details'>
-                        <span className='username '>{user.name}</span>
-                        <span className='user-description'>{user.description}</span>
-                    </div>
-
+            <div className='header-content'>
+                <Avatar sx={{ bgcolor: deepOrange[500] }}>{getInitials(user.name)}</Avatar>
+                <div className='account-details'>
+                    <span className='username '>{user.name}</span>
+                    <span className='user-description'>{user.description}</span>
                 </div>
-
+                <MoreVertIcon />
             </div>
         </div>
     );
