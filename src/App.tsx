@@ -12,12 +12,12 @@ function App() {
       {/* sidebar */}
       <Sidebar />
 
-      {/* main display */}
-      <div className='main-display'>
+      {/* general-panel */}
+      <div className='general-panel'>
         {/* header */}
         <Header />
 
-        {/* panel display */}
+        {/* main content display */}
 
 
       </div>
