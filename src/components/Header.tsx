@@ -14,7 +14,7 @@ interface Account {
 function Header() {
 
     const user: Account = {
-        name: "Jacek Niec",
+        name: "User Name",
         description: "Project Manager"
     }
 

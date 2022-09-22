@@ -22,6 +22,7 @@
     justify-content: center;
     width: 15%;
     height: 100vh;
+    padding: 35px;
 
     color: var(--white87);
     background: var(--background-black);
