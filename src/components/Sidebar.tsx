@@ -1,9 +1,10 @@
 import React from 'react';
+import './Sidebar.css';
 
 function Sidebar() {
     return (
         <div className='sidebar'>
-            <img src='../../public/hamgurger.svg' />
+            aaaa
         </div>
     );
 }

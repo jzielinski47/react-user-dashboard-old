@@ -31,3 +31,8 @@ body {
 
     /* color: var(--text87); */
 }
+
+.app {
+    display: flex;
+    justify-content: flex-start;
+}
