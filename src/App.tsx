@@ -21,14 +21,7 @@ function App() {
         {/* main content display */}
 
 
-      </div>
-
-
-
-
-
-
-      {/* panel */}
+      </div>    
 
     </div>
   );
