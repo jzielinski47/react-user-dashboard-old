@@ -3,9 +3,9 @@
     justify-content: center;
     width: 15%;
     min-width: 200px;
-    height: 100vh;
+    height: 100%;
     padding: 35px;
 
     color: var(--white87);
-    background: var(--background-black);
+    background: var(--panel-dark);
 }

@@ -9,9 +9,10 @@
     align-items: center;
 
     color: var(--black87);
-    background: var(--panel-white);
+    background: var(--panel-light);
 
-    border-bottom: 3px solid var(--border-white);
+    border-bottom: 3px solid var(--border-light);
+    flex-grow: 1;
 }
 
 .header-content {

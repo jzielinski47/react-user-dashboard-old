@@ -5,8 +5,8 @@
     min-height: 200px;
 
     color: var(--black87);
-    background: var(--panel-white);
-    border: 3px solid var(--border-white);
+    background: var(--panel-light);
+    border: 3px solid var(--border-light);
     border-radius: 1.5em;
 
     display: flex;
@@ -16,7 +16,7 @@
 
 .panel:nth-child(1) {
     color: var(--white87);
-    background: var(--background-black);
+    background: var(--panel-dark);
 }
 
 .panel .title {
