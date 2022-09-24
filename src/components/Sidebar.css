@@ -1,11 +1,17 @@
 .sidebar {
-    display: flex;
-    justify-content: center;
-    width: 15%;
-    min-width: 200px;
-    height: 100%;
+    /* width: 20%; */
+    min-width: 270px;
+    height: 100vh;
+
     padding: 35px;
 
     color: var(--white87);
     background: var(--panel-dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+    /* justify-content: center; */
 }

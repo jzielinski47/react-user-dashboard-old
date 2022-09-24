@@ -7,6 +7,7 @@ function Sidebar() {
     return (
         <div className='sidebar'>
             <span className='title'>{projectName}</span>
+            <button className='btn-1'>mode switch</button>
         </div>
     );
 }
