@@ -4,11 +4,9 @@ import { deepOrange } from '@mui/material/colors';
 import Hamburger from './Hamburger';
 import './Header.css';
 import React from 'react';
-import { Account } from '../interfaces/interfaces';
+import { Account, CurrentTab } from '../interfaces/interfaces';
 
-
-
-function Header() {
+function Header(props: CurrentTab) {
 
     const user: Account = {
         name: "Jakub Zieliński",
@@ -27,7 +25,7 @@ function Header() {
     return (
         <div className='header'>
             <div className='header-content'>
-                <Hamburger /> <span className="title">Dashboard</span>
+                <Hamburger /> <span className="title">{props.tab}</span>
             </div>
             <div className='header-content'>
                 <Avatar sx={{ bgcolor: deepOrange[500] }}>{getInitials(user.name)}</Avatar>

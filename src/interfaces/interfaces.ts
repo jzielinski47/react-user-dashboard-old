@@ -8,3 +8,7 @@ export interface Account {
     name: string;
     description: string;
 }
+
+export interface CurrentTab {
+    tab: string;
+}

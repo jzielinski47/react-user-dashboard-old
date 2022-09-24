@@ -3,7 +3,6 @@ import { PanelProperities } from '../interfaces/interfaces';
 import Panel from './Panel';
 import React from 'react';
 
-let tab: string = 'dashboard'
 let panels: PanelProperities[] = []
 
 for (let i = 0; i < 4; i++) {
