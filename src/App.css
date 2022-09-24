@@ -8,17 +8,9 @@
     box-sizing: border-box;
 }
 
-html,
-body,
-#root,
-.app {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--background-white);
+    background: var(--background-light);
 }
 
 .app {
@@ -26,7 +18,7 @@ body {
     justify-content: flex-start;
 }
 
-.general-panel {
+.display {
     width: 100%;
     height: 100%;
 }

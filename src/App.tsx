@@ -4,24 +4,17 @@ import Content from './components/Content';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
+let mode: string = 'light';
+
 function App() {
   return (
     <div className="app">
 
-      {/* App body */}
-
-      {/* sidebar */}
       <Sidebar />
-
-      {/* general-panel */}
-      <div className='general-panel'>
-        {/* header */}
+      <div className='display'>
         <Header />
         <Content />
-        {/* main content display */}
-
-
-      </div>    
+      </div>
 
     </div>
   );
