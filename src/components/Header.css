@@ -1,5 +1,6 @@
 .header {
     width: 100%;
+    height: 10%;
 
     min-height: 85px;
     padding: 20px 50px;
@@ -12,7 +13,6 @@
     background: var(--panel-light);
 
     border-bottom: 3px solid var(--border-light);
-    flex-grow: 1;
 }
 
 .header-content {
