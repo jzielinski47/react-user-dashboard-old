@@ -8,6 +8,12 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 1em;
+}
 
-    background-color: var(--background-light);
+.content.light {
+    background: var(--background-light);
+}
+
+.content.dark {
+    background: var(--background-dark);
 }

@@ -18,6 +18,9 @@
     --panel-light: #FAFAFA;
     --panel-dark: #040404;
 
+    --dark-mode-border: #1e1e1e;
+    --dark-mode-panel: #242424;
+
     --border-light: #E8E8E8;
     --border-dark: #333333;
 }

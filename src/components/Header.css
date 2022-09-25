@@ -10,7 +10,7 @@
     align-items: center;
 
     border-bottom: 3px solid var(--border-light);
-    transition: 1s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .header.light {
@@ -19,10 +19,18 @@
     border-bottom: 3px solid var(--border-light);
 }
 
+.header.light .user-description {
+    color: var(--black60);
+}
+
 .header.dark {
     color: var(--white87);
     background: var(--panel-dark);
-    border-bottom: 3px solid var(--border-light);
+    border-bottom: 3px solid var(--border-dark);
+}
+
+.header.dark .user-description {
+    color: var(--white60);
 }
 
 .header-content {
@@ -38,12 +46,10 @@
 }
 
 .username {
-    color: var(--black87);
     font-weight: 700;
 }
 
 .user-description {
-    color: var(--black60);
     font-weight: 500;
 }
 
