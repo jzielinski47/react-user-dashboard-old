@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
 
-      <Sidebar darkMode={darkMode} setDarkMode={setDarkMode} expansion={sidebarExpansion} />
+      <Sidebar darkMode={darkMode} setDarkMode={setDarkMode} expansion={sidebarExpansion} projectName="Jakub Zieliński" />
       <div className='display'>
         <Header tab={tab} mode={darkMode} expansion={sidebarExpansion} setExpansion={setSidebarExpansion} />
         <Content tab={tab} mode={darkMode} />

@@ -5,11 +5,18 @@ import './Sidebar.css';
 
 function Sidebar(props: SidebarProps) {
 
-    const projectName: string = "User Dashboard"
+    const getInitials = (name: string) => {
+        const names = name.split(' ')
+        let initials: string = "";
+        for (let i = 0; i < names.length; i++) {
+            initials += names[i].charAt(0)
+        }
+        return initials;
+    }
 
     return (
         <div className={props.expansion ? 'sidebar wide' : 'sidebar narrow'}>
-            <span className='title'>{projectName}</span>
+            <span className='title'>{props.expansion ? getInitials(props.projectName) : getInitials(props.projectName)}</span>
             <ModeSwitch darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
         </div>
     );

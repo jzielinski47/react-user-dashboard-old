@@ -27,6 +27,7 @@ export interface SidebarProps {
     darkMode: boolean;
     expansion: boolean;
     setDarkMode: (value: boolean) => void;
+    projectName: string;
 }
 
 export interface ModeSwitchProps {
