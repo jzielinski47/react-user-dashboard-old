@@ -4,15 +4,24 @@
     /* min-width: 350px; */
     /* min-height: 200px; */
 
-    color: var(--black87);
-    background: var(--panel-light);
-    border: 3px solid var(--border-light);
-    border-radius: 1.5em;
+    border-radius: 1em;
 
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 
+}
+
+.panel.light {
+    color: var(--black87);
+    background: var(--panel-light);
+    border: 2px solid var(--border-light);
+}
+
+.panel.dark {
+    color: var(--white87);
+    background: var(--dark-mode-border);
+    border: 2px solid var(--dark-mode-border);
 }
 
 .panel:nth-child(1) {

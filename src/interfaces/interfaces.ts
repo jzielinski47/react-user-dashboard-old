@@ -1,4 +1,5 @@
 export interface PanelProperities {
+    mode?: boolean;
     id?: number;
     title: string;
 }
