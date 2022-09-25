@@ -1,5 +1,6 @@
 import { Avatar } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import MenuIcon from '@mui/icons-material/Menu';
 import { deepOrange } from '@mui/material/colors';
 import Hamburger from './Hamburger';
 import './Header.css';
@@ -26,7 +27,7 @@ function Header(props: DisplayProps) {
     return (
         <div className={(props.mode) ? 'header dark' : 'header light'}>
             <div className='header-content'>
-                <Hamburger /> <span className="title">{props.tab}</span>
+                <MenuIcon /> <span className="title">{props.tab}</span>
             </div>
             <div className='header-content'>
                 <Avatar sx={{ bgcolor: deepOrange[500] }}>{getInitials(user.name)}</Avatar>
