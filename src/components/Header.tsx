@@ -2,7 +2,6 @@ import { Avatar } from '@mui/material';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import MenuIcon from '@mui/icons-material/Menu';
 import { deepOrange } from '@mui/material/colors';
-import Hamburger from './Hamburger';
 import './Header.css';
 import React from 'react';
 import { Account, DisplayProps } from '../interfaces/interfaces';
