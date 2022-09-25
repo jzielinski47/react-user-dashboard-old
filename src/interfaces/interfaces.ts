@@ -10,13 +10,22 @@ export interface Account {
     description: string;
 }
 
-export interface DisplayProps {
+export interface HeaderProps {
+    tab: string;
+    mode: boolean;
+    expansion?: boolean;
+    setExpansion: (value: boolean) => void;
+}
+
+export interface DisplayContentProps {
     tab: string;
     mode: boolean;
 }
 
+
 export interface SidebarProps {
     darkMode: boolean;
+    expansion: boolean;
     setDarkMode: (value: boolean) => void;
 }
 

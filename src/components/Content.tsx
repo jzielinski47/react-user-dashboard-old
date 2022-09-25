@@ -1,9 +1,9 @@
 import './Content.css';
-import { DisplayProps, PanelProperities } from '../interfaces/interfaces';
+import { DisplayContentProps, PanelProperities } from '../interfaces/interfaces';
 import Panel from './Panel';
 import React from 'react';
 
-function Content(props: DisplayProps) {
+function Content(props: DisplayContentProps) {
 
     let panels: PanelProperities[] = []
 

@@ -1,6 +1,5 @@
 .sidebar {
-    width: 10%;
-    min-width: 270px;
+    /* min-width: 270px; */
     height: 100vh;
 
     padding: 35px;
@@ -14,6 +13,14 @@
 
     gap: 1em;
     /* justify-content: center; */
+}
+
+.sidebar.wide {
+    width: 10%;
+}
+
+.sidebar.narrow {
+    width: 5%;
 }
 
 .mode {

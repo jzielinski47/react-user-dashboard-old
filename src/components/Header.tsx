@@ -4,9 +4,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { deepOrange } from '@mui/material/colors';
 import './Header.css';
 import React from 'react';
-import { Account, DisplayProps } from '../interfaces/interfaces';
+import { Account, HeaderProps } from '../interfaces/interfaces';
+import { truncateSync } from 'fs';
 
-function Header(props: DisplayProps) {
+function Header(props: HeaderProps) {
 
     const user: Account = {
         name: "Jakub Zieliński",
@@ -22,11 +23,10 @@ function Header(props: DisplayProps) {
         return initials;
     }
 
-
     return (
         <div className={(props.mode) ? 'header dark' : 'header light'}>
             <div className='header-content'>
-                <MenuIcon /> <span className="title">{props.tab}</span>
+                <MenuIcon onClick={() => props.setExpansion((props.expansion) ? false : true)} /> <span className="title">{props.tab}</span>
             </div>
             <div className='header-content'>
                 <Avatar sx={{ bgcolor: deepOrange[500] }}>{getInitials(user.name)}</Avatar>
