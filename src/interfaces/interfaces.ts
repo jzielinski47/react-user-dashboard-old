@@ -9,6 +9,12 @@ export interface Account {
     description: string;
 }
 
-export interface CurrentTab {
+export interface DisplayProps {
     tab: string;
+    mode: boolean;
+}
+
+export interface SidebarProps {
+    darkMode: boolean;
+    setDarkMode: (value: boolean) => void;
 }

@@ -9,9 +9,19 @@
     justify-content: space-between;
     align-items: center;
 
+    border-bottom: 3px solid var(--border-light);
+    transition: 1s ease;
+}
+
+.header.light {
     color: var(--black87);
     background: var(--panel-light);
+    border-bottom: 3px solid var(--border-light);
+}
 
+.header.dark {
+    color: var(--white87);
+    background: var(--panel-dark);
     border-bottom: 3px solid var(--border-light);
 }
 

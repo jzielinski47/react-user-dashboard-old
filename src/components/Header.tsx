@@ -4,9 +4,9 @@ import { deepOrange } from '@mui/material/colors';
 import Hamburger from './Hamburger';
 import './Header.css';
 import React from 'react';
-import { Account, CurrentTab } from '../interfaces/interfaces';
+import { Account, DisplayProps } from '../interfaces/interfaces';
 
-function Header(props: CurrentTab) {
+function Header(props: DisplayProps) {
 
     const user: Account = {
         name: "Jakub Zieliński",
@@ -22,8 +22,9 @@ function Header(props: CurrentTab) {
         return initials;
     }
 
+
     return (
-        <div className='header'>
+        <div className={(props.mode) ? 'header dark' : 'header light'}>
             <div className='header-content'>
                 <Hamburger /> <span className="title">{props.tab}</span>
             </div>

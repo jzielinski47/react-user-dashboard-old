@@ -5,16 +5,16 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState<boolean>(false)
   const [tab, setCurrentTab] = useState('Dashboard')
 
   return (
     <div className="app">
 
-      <Sidebar />
+      <Sidebar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className='display'>
-        <Header tab={tab} />
-        <Content />
+        <Header tab={tab} mode={darkMode} />
+        <Content tab={tab} mode={darkMode} />
       </div>
 
     </div>
