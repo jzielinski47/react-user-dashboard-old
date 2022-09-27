@@ -11,7 +11,7 @@ function Header(props: HeaderProps) {
     const [user, setUser] = useState<UserAccount>({ name: "Jakub Zieliński", description: "Project Manager" })
     const [settingsOpen, setSettingsOpen] = useState<boolean>(false)
 
-    const extendSettings = () => { setSettingsOpen(settingsOpen ? false : true) }
+    const extendSettings = () => { setSettingsOpen(settingsOpen ? false : true); console.log('settings', settingsOpen) }
 
     return (
         <div className={(props.mode) ? 'header dark' : 'header light'}>
