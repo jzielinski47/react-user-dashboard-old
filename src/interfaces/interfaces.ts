@@ -8,6 +8,15 @@ export interface Account {
     id?: string;
     name: string;
     description: string;
+
+    settingsOpen?: boolean;
+    setSettings: () => void;
+}
+
+export interface UserAccount {
+    id?: string;
+    name: string;
+    description: string;
 }
 
 export interface HeaderProps {

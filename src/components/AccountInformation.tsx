@@ -22,7 +22,7 @@ function AccountInformation(props: Account) {
                 <span className='username '>{props.name}</span>
                 <span className='user-description'>{props.description}</span>
             </div>
-            <MoreVertIcon />
+            <MoreVertIcon onClick={props.setSettings} />
         </>
     );
 }
