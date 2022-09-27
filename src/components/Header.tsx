@@ -1,27 +1,19 @@
-import { Avatar } from '@mui/material';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 import MenuIcon from '@mui/icons-material/Menu';
-import { deepOrange } from '@mui/material/colors';
 import './Header.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { Account, HeaderProps } from '../interfaces/interfaces';
-import { truncateSync } from 'fs';
+import AccountInformation from './AccountInformation';
+
 
 function Header(props: HeaderProps) {
 
-    const user: Account = {
-        name: "Jakub Zieliński",
-        description: "Project Manager"
-    }
-
-    const getInitials = (name: string) => {
-        const names = name.split(' ')
-        let initials: string = "";
-        for (let i = 0; i < names.length; i++) {
-            initials += names[i].charAt(0)
+    const [user, setUser] = useState<Account>(
+        {
+            name: "Jakub Zieliński",
+            description: "Project Manager"
         }
-        return initials;
-    }
+    )
 
     return (
         <div className={(props.mode) ? 'header dark' : 'header light'}>
@@ -29,12 +21,7 @@ function Header(props: HeaderProps) {
                 <MenuIcon onClick={() => props.setExpansion((props.expansion) ? false : true)} /> <span className="title">{props.tab}</span>
             </div>
             <div className='header-content'>
-                <Avatar sx={{ bgcolor: deepOrange[500] }}>{getInitials(user.name)}</Avatar>
-                <div className='account-details'>
-                    <span className='username '>{user.name}</span>
-                    <span className='user-description'>{user.description}</span>
-                </div>
-                <MoreVertIcon />
+                <AccountInformation name={user.name} description={user.description} />
             </div>
         </div>
     );
