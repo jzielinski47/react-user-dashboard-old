@@ -1,9 +1,9 @@
 import React from 'react';
 
-function UserSettings() {
+function UserSettings(props) {
     return (
         <div>
-            a
+            <span className='title'>{props.name}</span>
         </div>
     );
 }

@@ -43,3 +43,7 @@ export interface ModeSwitchProps {
     darkMode: boolean;
     setDarkMode: (value: boolean) => void;
 }
+
+export interface Settings {
+    name: string;
+}
