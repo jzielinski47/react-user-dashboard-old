@@ -2,6 +2,10 @@ export interface PanelProperities {
     mode?: boolean;
     id?: number;
     title: string;
+    description: string;
+    displayIcon: boolean;
+    icon?: string;
+
 }
 
 export interface Account {
