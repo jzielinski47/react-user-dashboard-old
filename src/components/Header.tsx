@@ -8,7 +8,7 @@ import AccountInformation from './AccountInformation';
 
 function Header(props: HeaderProps) {
 
-    const [user, setUser] = useState<UserAccount>({ name: "Jakub Zieliński", description: "Project Manager" })
+    const [user, setUser] = useState<UserAccount>({ name: "Katarzyna Sobieraj", description: "Dziewczyna" })
     const [settingsOpen, setSettingsOpen] = useState<boolean>(false)
 
     const extendSettings = () => { setSettingsOpen(settingsOpen ? false : true); console.log('settings', settingsOpen) }

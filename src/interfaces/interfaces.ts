@@ -2,8 +2,8 @@ export interface PanelProperities {
     mode?: boolean;
     id?: number;
     title: string;
-    description: string;
-    displayIcon: boolean;
+    description?: string;
+    displayIcon?: boolean;
     icon?: string;
 
 }
