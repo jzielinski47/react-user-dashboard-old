@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SidebarProps } from '../interfaces/interfaces';
 import ModeSwitch from './ModeSwitch';
-import './Sidebar.css';
+import './stylesheets/Sidebar.css';
 
 function Sidebar(props: SidebarProps) {
 

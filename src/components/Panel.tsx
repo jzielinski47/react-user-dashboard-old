@@ -1,4 +1,4 @@
-import './Panel.css'
+import './stylesheets/Panel.css'
 import React, { useState } from 'react';
 import { PanelProperities } from '../interfaces/interfaces';
 

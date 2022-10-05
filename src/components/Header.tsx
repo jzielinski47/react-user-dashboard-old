@@ -1,6 +1,6 @@
 
 import MenuIcon from '@mui/icons-material/Menu';
-import './Header.css';
+import './stylesheets/Header.css';
 import React, { useState } from 'react';
 import { Account, HeaderProps, UserAccount } from '../interfaces/interfaces';
 import AccountInformation from './AccountInformation';

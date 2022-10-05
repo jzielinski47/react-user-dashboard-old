@@ -1,4 +1,4 @@
-import './Content.css';
+import './stylesheets/Content.css';
 import { DisplayContentProps, PanelProperities } from '../interfaces/interfaces';
 import Panel from './Panel';
 import React from 'react';
