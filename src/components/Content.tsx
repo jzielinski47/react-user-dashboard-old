@@ -5,6 +5,8 @@ import React from 'react';
 
 function Content(props: DisplayContentProps) {
 
+    // dadad
+
     let panels: PanelProperities[] = []
 
     for (let i = 0; i < 6; i++) {
